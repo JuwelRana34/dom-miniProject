@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="./css/index.css">
+    <title>Dom</title>
+  </head>
+  <body>
+    <nav class="container mx-auto">
+      <ul class=" list bg-blue-100 md:flex justify-evenly py-5 text-blue-700 text-xl">
+        <li class="li cursor-pointer p-5 rounded-md">Home</li>
+        <li class="li cursor-pointer p-5 rounded-md">About</li>
+        <li class="li cursor-pointer p-5 rounded-md">contact</li>
+        <li class="li cursor-pointer p-5 rounded-md">project</li>
+      </ul>
+    </nav>
+
+    <h1
+      class="w-1/2 bg-green-400 shadow-md shadow-green-200 mx-auto my-5 text-center p-4 rounded-md text-white text-xl"
+    >
+      list update
+    </h1>
+    <div>
+      <div class="w-5/6 mx-auto">
+        <input
+          id="input"
+          type="text"
+          placeholder="Type Your task "
+          class="border my-2 border-blue-300 text-blue-500 rounded-md p-2 block w-full md:w-1/2 mx-auto focus:outline-orange-500 focus:text-orange-600"
+        />
+        <div class="text-end w-1/2 mx-auto">
+          <button
+            id="btn"
+            class="inline-block mx-auto py-3 px-5 bg-blue-500 m-2 text-white rounded-md"
+          >
+            add
+          </button>
+          <button
+            id="clr"
+            class="inline-block mx-auto py-3 px-5 bg-red-500 m-2 text-white rounded-md"
+          >
+            clear all
+          </button>
+        </div>
+      </div>
+
+      <ul
+        id="parent"
+        class="border rounded-md list-decimal list-inside w-full md:w-1/2 mx-auto p-5"
+      ></ul>
+    </div>
+
+
+    <div>
+      <p class="w-1/2 capitalize mx-auto mt-10 bg-blue-500 rounded-md py-4 text-center text-xl text-white"><span class="text-red-500 text-xl ">*</span>note: if you have coupon write here and get 50% discount </p>
+      <div class="text-center py-5">
+        <input id="inputCoupon" type="text"   placeholder=" Type Your coupon" class="border w-5/6 mx-auto focus:outline-teal-400 focus:text-teal-600 focus:bg-teal-50 p-4">  
+      </div>
+     
+      <p id="show" class="text-xl w-[90%] mx-auto text-green-500"></p>
+    </div>
+<!-- ******************************************* -->
+
+<div id="parent1" class="bg-blue-100 p-10 text-center">
+  <h1 id="showRsult" class="text-lg">0</h1>
+  <button id="add"  class="border p-3 bg-green-300 rounded-md">add</button>
+  <button id="cancel" class="border p-3 bg-red-300 rounded-md">cancel</button>
+</div>
+
+    <script src="/dom/js/index.js"></script>
+  </body>
+</html>
